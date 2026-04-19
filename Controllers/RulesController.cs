@@ -8,6 +8,7 @@ namespace FLM_WEB_API.Controllers
     public class RulesController : ControllerBase
     {
         [HttpGet]
+        [Route("GetAllRules")]
         public ActionResult GetRulesList() {
 
             return Ok();
