@@ -11,13 +11,20 @@ namespace FLM_WEB_API.Controllers
         [Route("GetAllRules")]
         public ActionResult GetRulesList() {
 
-            return Ok();
+            return Ok("Rules of loan application..");
         }
 
         [HttpGet]
         [Route("TestApi")]
         public ActionResult TestApi() {
             return Ok("Hello String");
+        }
+
+        [HttpGet]
+        [Route("ErrorApi")]
+        public ActionResult TestApi()
+        {
+            return Ok("This is error api");
         }
     }
 }
