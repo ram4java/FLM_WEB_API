@@ -25,11 +25,12 @@ namespace FLM_WEB_API.Controllers
         public ActionResult TestApi(){
             return Ok("This is error api");
         }
-        
+
         [HttpGet]
-        [Route("HelloApi")]
-        public ActionResult HelloApi() {
-            return Ok("Hello Api changed in Git");
+        [Route("Lastapi")]
+        public ActionResult LastApi()
+        {
+            return Ok("This is last api");
         }
     }
 }
