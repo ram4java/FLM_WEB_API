@@ -7,6 +7,10 @@ namespace FLM_WEB_API.Controllers
     [ApiController]
     public class RulesController : ControllerBase
     {
+        [HttpGet]
+        public ActionResult GetRulesList() {
 
+            return Ok();
+        }
     }
 }
