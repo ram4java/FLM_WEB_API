@@ -13,5 +13,11 @@ namespace FLM_WEB_API.Controllers
 
             return Ok();
         }
+
+        [HttpGet]
+        [Route("TestApi")]
+        public ActionResult TestApi() {
+            return Ok("Hello String");
+        }
     }
 }
