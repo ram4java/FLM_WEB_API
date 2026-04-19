@@ -19,5 +19,11 @@ namespace FLM_WEB_API.Controllers
         public ActionResult TestApi() {
             return Ok("Hello String");
         }
+
+        [HttpGet]
+        [Route("HelloApi")]
+        public ActionResult HelloApi() {
+            return Ok("Hello Api changed in Git");
+        }
     }
 }
