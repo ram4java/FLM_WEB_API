@@ -22,9 +22,14 @@ namespace FLM_WEB_API.Controllers
 
         [HttpGet]
         [Route("ErrorApi")]
-        public ActionResult TestApi()
-        {
+        public ActionResult TestApi(){
             return Ok("This is error api");
+        }
+        
+        [HttpGet]
+        [Route("HelloApi")]
+        public ActionResult HelloApi() {
+            return Ok("Hello Api changed in Git");
         }
     }
 }
