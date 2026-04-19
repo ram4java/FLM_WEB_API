@@ -26,5 +26,12 @@ namespace FLM_WEB_API.Controllers
         {
             return Ok("This is error api");
         }
+
+        [HttpGet]
+        [Route("Lastapi")]
+        public ActionResult LastApi()
+        {
+            return Ok("This is last api");
+        }
     }
 }
